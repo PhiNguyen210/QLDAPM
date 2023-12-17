@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+    <head>
+        <title>SHOP - LY</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body>
+        <div>
+            <h1> 
+                Qúi khách muốn dùng món gì ạ!
+            </h1>
+            <form> 
+                <label>Menu</label> 
+                <select>
+                    <option>Coffee đá </option>
+                    <option>Cafe sữa đá </option>
+                    <option>Trà sữa đường đen </option>
+                    <option>Bạc sĩu </option>
+                </select>
+            </form>
+        </div>
+        <div> 
+            <img width="150" src="https://neurosciencenews.com/files/2023/06/coffee-brain-caffeine-neuroscincces.jpg" />
+            <img width="150" src="https://caphekhoanbetong.com/wp-content/uploads/2021/09/cac-mui-vi-cua-mot-ly-cafe-ngon-va-dat-chuan.jpg" />
+            <img width="150" src="https://www.cukcuk.vn/wp-content/uploads/2022/07/quan-3t-coffee-3-25a42e6d.jpeg" />
+            <img width="150" src="https://cdn.nhathuoclongchau.com.vn/unsafe/800x0/https://cms-prod.s3-sgn09.fptcloud.com/uong_nhieu_tra_sua_co_gay_ung_thu_khong_1_f8f43641f7.png" />
+        </div>
+    </body>
+</html> 
+   
