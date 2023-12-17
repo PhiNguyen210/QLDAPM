@@ -1,30 +1,176 @@
+/*index*/
 <!DOCTYPE html>
-    <head>
-        <title>SHOP - LY</title>
-        <meta charset="utf-8">
-        <link rel="stylesheet" href="main.css">
-    </head>
-    <body>
-        <div>
-            <h1> 
-                Qúi khách muốn dùng món gì ạ!
-            </h1>
-            <form> 
-                <label>Menu</label> 
-                <select>
-                    <option>Coffee đá </option>
-                    <option>Cafe sữa đá </option>
-                    <option>Trà sữa đường đen </option>
-                    <option>Bạc sĩu </option>
-                </select>
-            </form>
-        </div>
-        <div> 
-            <img width="150" src="https://neurosciencenews.com/files/2023/06/coffee-brain-caffeine-neuroscincces.jpg" />
-            <img width="150" src="https://caphekhoanbetong.com/wp-content/uploads/2021/09/cac-mui-vi-cua-mot-ly-cafe-ngon-va-dat-chuan.jpg" />
-            <img width="150" src="https://www.cukcuk.vn/wp-content/uploads/2022/07/quan-3t-coffee-3-25a42e6d.jpeg" />
-            <img width="150" src="https://cdn.nhathuoclongchau.com.vn/unsafe/800x0/https://cms-prod.s3-sgn09.fptcloud.com/uong_nhieu_tra_sua_co_gay_ung_thu_khong_1_f8f43641f7.png" />
-        </div>
-    </body>
-</html> 
-   
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>WEB Bán Dụng Cụ Học Tập</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<div class="wrapper">
+		<?php
+		include("pages/header.php");
+		include("pages/menu.php");
+		include("pages/main.php");
+		include("pages/footer.php");
+		?>
+		
+		
+			
+	</div>
+</body>
+</html>
+
+/*menu.php*/
+<div class="menu">
+			<ul class="list_menu">
+				<li><a href="index.php">Trang chủ</a></li>
+				<li><a href="index.php?quanly=danhmucsanpham&id=1">Danh mục sản phẩm</a></li>
+				<li><a href="index.php?quanly=giohang">Giỏ hàng</a></li>
+				<li><a href="index.php?quanly=tintuc">Tin tức</a></li>
+				<li><a href="index.php?quanly=lienhe">Liên hệ</a></li>
+				
+				
+			</ul>
+		</div>
+
+    /*main.php
+    <div id="main">
+			
+			<?php
+				include("sidebar/sidebar.php");
+			?>
+				
+			<div class="maincontent">
+				<?php
+				if(isset($_GET['quanly'])){
+					$tam = $_GET['quanly'];
+				}else{
+					$tam = '';
+				}
+				if($tam=='danhmucsanpham'){
+					include("main/danhmuc.php");
+				}elseif($tam=='giohang'){
+					include("main/giohang.php");
+				}elseif($tam=='tintuc'){
+					include("main/tintuc.php");
+				}elseif($tam=='lienhe'){
+					include("main/lienhe.php");
+				}else{
+					include("main/index.php");
+				}
+				?>
+			</div>
+	</div>
+  */footer*/
+  <div class="clear"></div>
+		<div class="footer">
+			<p class=" footer_copyright">Copyright by NhutMinh developer 2023</p>
+		</div>
+
+    /*sideber*/
+    <div class="sidebar">
+				<ul class="list_sidebar">
+				
+				<li><a href="index.php?quanly=danhmucsanpham&id=1">Cafe1( Các loại)</a></li>
+				<li><a href="index.php?quanly=danhmucsanpham&id=2">Cafe2 </a></li>
+				<li><a href="index.php?quanly=danhmucsanpham&id=3">Cafe3</a></li>
+				<li><a href="#">Cafe4</a></li>
+				<li><a href="#">Cafe5</a></li>
+				<li><a href="#">Cafe6</a></li>
+				<li><a href="#">Cafe7</a></li>
+				</ul>
+			</div>
+      /*indexsanpham.php */
+      <h3>Sản phẩm mới nhất</h3>
+				 <ul class="product_list">
+					<li>
+					<a href="">
+						<img src="images/vietmucxanh.jpg">
+						<p class="title_product">Ten san pham: Cafe 001</p>
+						<p class="price_product">Gia : 4000000 vnd</p>
+						</a>
+					</li>
+					<li>
+						<img src="images/vietmucxanh1.jpg">
+						<p class="title_product">Ten san pham: Cafe 001</p>
+						<p class="price_product">Gia : 4000000 vnd</p>
+					</li>
+					<li>
+						<img src="images/vietmucxanh.jpg">
+						<p class="title_product">Ten san pham: Cafe 001</p>
+						<p class="price_product">Gia : 4000000 vnd</p>
+					</li>
+					<li>
+						<img src="images/vietmucxanh.jpg">
+						<p class="title_product">Ten san pham: Cafe 001</p>
+						<p class="price_product">Gia : 4000000 vnd</p>
+					</li>
+					<li>
+						<img src="images/vietmucxanh.jpg">
+						<p class="title_product">Ten san pham: Cafe 001</p>
+						<p class="price_product">Gia : 4000000 vnd</p>
+					</li>
+					<li>
+						<img src="images/vietmucxanh.jpg">
+						<p class="title_product">Ten san pham: Cafe 001</p>
+						<p class="price_product">Gia : 4000000 vnd</p>
+					</li>
+					<li>
+						<img src="images/vietmucxanh.jpg">
+						<p class="title_product">Ten san pham: Cafe 001</p>
+						<p class="price_product">Gia : 4000000 vnd</p>
+					</li>
+					<li>
+						<img src="images/vietmucxanh.jpg">
+						<p class="title_product">Ten san pham: Cafe 001</p>
+						<p class="price_product">Gia : 4000000 vnd</p>
+					</li>
+				 </ul>
+         */danhmuc*/
+         <h3>Sản phẩm mới nhất</h3>
+				 <ul class="product_list">
+					<li>
+					<a href="">
+						<img src="images/vietmucxanh.jpg">
+						<p class="title_product">Ten san pham: Cafe 001</p>
+						<p class="price_product">Gia : 4000000 vnd</p>
+						</a>
+					</li>
+					<li>
+						<img src="images/vietmucxanh1.jpg">
+						<p class="title_product">Ten san pham: Cafe 001</p>
+						<p class="price_product">Gia : 4000000 vnd</p>
+					</li>
+					<li>
+						<img src="images/vietmucxanh.jpg">
+						<p class="title_product">Ten san pham: Cafe 001</p>
+						<p class="price_product">Gia : 4000000 vnd</p>
+					</li>
+					<li>
+						<img src="images/vietmucxanh.jpg">
+						<p class="title_product">Ten san pham: Cafe 001</p>
+						<p class="price_product">Gia : 4000000 vnd</p>
+					</li>
+					<li>
+						<img src="images/vietmucxanh.jpg">
+						<p class="title_product">Ten san pham: Cafe 001</p>
+						<p class="price_product">Gia : 4000000 vnd</p>
+					</li>
+					<li>
+						<img src="images/vietmucxanh.jpg">
+						<p class="title_product">Ten san pham: Cafe 001</p>
+						<p class="price_product">Gia : 4000000 vnd</p>
+					</li>
+					<li>
+						<img src="images/vietmucxanh.jpg">
+						<p class="title_product">Ten san pham: Cafe 001</p>
+						<p class="price_product">Gia : 4000000 vnd</p>
+					</li>
+					<li>
+						<img src="images/vietmucxanh.jpg">
+						<p class="title_product">Ten san pham: Cafe 001</p>
+						<p class="price_product">Gia : 4000000 vnd</p>
+					</li>
+				 </ul>
