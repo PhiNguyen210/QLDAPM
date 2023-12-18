@@ -1,6 +1,4 @@
-<?php
-session_start();
-?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,7 +15,7 @@ session_start();
 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
 	
-/*them code*/
+
   <link rel="stylesheet" href="styles.css"> <!-- Nếu có file CSS riêng -->
   <style>
     .carousel-item img {
@@ -39,15 +37,19 @@ session_start();
       background-color: #f1f1f1;
       height: 100%;
     }
-    
+   
 
     footer {
       background-color: #555;
       color: white;
       padding: 15px;
     }
-    
-    
+	.navbar-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+	}
     @media screen and (max-width: 767px) {
       .sidenav {
         height: auto;
@@ -61,14 +63,14 @@ session_start();
 
 <header>
   <nav class="navbar navbar-expand-lg navbar-light bg-warning">
-    <label><a class="navbar-brand text-success " href="giaodien.html">COFFEE SHOP</a></label>
+    <label><a class="navbar-brand text-success " href="main.html">COFFEE SHOP</a></label>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <div class="collapse navbar-collapse" id="navbarNavDropdown" text-center>
       <ul class="navbar-nav mr-auto">
         <li class="nav-item active">
-          <a class="nav-link" href="giaodien.html"><i class="bi bi-house-fill"></i>Trang chủ</a>
+          <a class="nav-link" href="main.html"><i class="bi bi-house-fill"></i>Trang chủ</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Giới thiệu</a>
@@ -126,13 +128,13 @@ session_start();
   <!-- The slideshow/carousel -->
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="h1.jpg" alt="Los Angeles" class="d-block" style="width:100%">
+      <img src="images/t1.jpg" alt="COFFEE1" class="d-block" style="width:100%">
     </div>
     <div class="carousel-item">
-      <img src="h2.jpg" alt="Chicago" class="d-block" style="width:100%">
+      <img src="images/t2.jpg" alt="COFFEE2" class="d-block" style="width:100%">
     </div>
     <div class="carousel-item">
-      <img src="h3.jpg" alt="New York" class="d-block" style="width:100%">
+      <img src="images/t3.jpg" alt="COFFEE3" class="d-block" style="width:100%">
     </div>
   </div>
   
@@ -157,7 +159,8 @@ session_start();
 		<div class="list-group">
 			<a href="#" class="list-group-item active"><i class="bi bi-book-fill"></i> danh muc</a>
 			<a href="#" class="list-group-item"><i class="bi bi-dash-circle"></i> quản lý danh mục</a>	
-			<a href="#" class="list-group-item"><i class="bi bi-dash-circle"></i> quản lý hàng hóa</a>
+			<a href="#" class="list-group-item"><i class="bi bi-dash-circle"></i> quản lý mặt hàng</a>
+			<a href="#" class="list-group-item"><i class="bi bi-dash-circle"></i> quản lý đơn hàng</a>
 		</div>
 		<div class="list-group">
 			<a href="#" class="list-group-item active"><i class="bi bi-grid"></i> kinh doanh</a>
@@ -168,20 +171,52 @@ session_start();
     <div class="col-sm-9">
 		<div class="row">
 			<div class="col-sm-3" >
-				<img src="a2.png" class="img-thumbnail" alt="anh">
-				<p><center>HTML</center></p>
+				<img src="images/vietmucxanh2.jpg" class="img-thumbnail" alt="anh">
+				<p><center>coffe</center></p>
 			</div>
 			<div class="col-sm-3" >
-				<img src="a2.jpg" class="img-thumbnail" alt="ảnh">
-				<p><center>HTML và css</center></p>
+				<img src="images/vietmucxanh2.jpg" class="img-thumbnail" alt="anh">
+				<p><center>coffe</center></p>
 			</div>
 			<div class="col-sm-3" >
-				<img src="a4.jpg" class="img-thumbnail" alt="ảnh">
-				<p><center>JAVASCRIPT</center></p>
+				<img src="images/vietmucxanh2.jpg" class="img-thumbnail" alt="anh">
+				<p><center>coffe</center></p>
 			</div>
 			<div class="col-sm-3" >
-				<img src="a3.png" class="img-thumbnail" alt="ảnh">
-				<p><center>Bootstrap</center></p>
+				<img src="images/vietmucxanh3.jpg" class="img-thumbnail" alt="anh">
+				<p><center>coffe</center></p>
+			</div>
+			<div class="col-sm-3" >
+				<img src="images/vietmucxanh3.jpg" class="img-thumbnail" alt="anh">
+				<p><center>coffe</center></p>
+			</div>
+			<div class="col-sm-3" >
+				<img src="images/vietmucxanh3.jpg" class="img-thumbnail" alt="anh">
+				<p><center>coffe</center></p>
+			</div>
+			<div class="col-sm-3" >
+				<img src="images/vietmucxanh3.jpg" class="img-thumbnail" alt="anh">
+				<p><center>coffe</center></p>
+			</div>
+			<div class="col-sm-3" >
+				<img src="images/vietmucxanh3.jpg" class="img-thumbnail" alt="anh">
+				<p><center>coffe</center></p>
+			</div>
+			<div class="col-sm-3" >
+				<img src="images/vietmucxanh3.jpg" class="img-thumbnail" alt="anh">
+				<p><center>coffe</center></p>
+			</div>
+			<div class="col-sm-3" >
+				<img src="images/vietmucxanh3.jpg" class="img-thumbnail" alt="anh">
+				<p><center>coffe</center></p>
+			</div>
+			<div class="col-sm-3" >
+				<img src="images/vietmucxanh3.jpg" class="img-thumbnail" alt="anh">
+				<p><center>coffe</center></p>
+			</div>
+			<div class="col-sm-3" >
+				<img src="images/vietmucxanh3.jpg" class="img-thumbnail" alt="anh">
+				<p><center>coffe</center></p>
 			</div>
 		</div>
 		
